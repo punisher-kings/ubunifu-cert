@@ -6,7 +6,7 @@ function Shop() {
   );
 
   const totalCost = shop.reduce(
-    (total, item) => total + parseFloat(item.price.replace(/[^0-9.-]+/g, "")),
+    (total, item) => total + parseFloat(item?.price),
     0
   );
 

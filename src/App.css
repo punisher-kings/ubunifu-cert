@@ -351,39 +351,3 @@ h5 {
   height: 35px;
   border: 1px solid black;
 }
-
-@media (min-width: 758px) {
-  body {
-    font-size: 18px;
-    background-color: black;
-    color: white;
-  }
-  input {
-    width: 55%;
-    height: 55px;
-  }
-
-  button {
-    width: 55%;
-    height: 50px;
-  }
-  a,
-  span {
-    color: white;
-  }
-  img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .products {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 30%;
-    color: black;
-    border: 1px solid blue;
-    height: 100%;
-  }
-}
