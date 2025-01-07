@@ -377,7 +377,7 @@ h5 {
   }
 
   .products {
-    width: 15%;
+    width: auto;
     color: black;
     border: 1px solid blue;
     height: 100%;
