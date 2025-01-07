@@ -359,7 +359,7 @@ h5 {
     color: white;
   }
   input {
-    width: 200%;
+    width: 55%;
     height: 55px;
   }
 
@@ -377,9 +377,9 @@ h5 {
   }
 
   .products {
-    width: 40%;
+    width: 50%;
     color: black;
-    height: 70%;
+    height: 150%;
   }
 }
 
