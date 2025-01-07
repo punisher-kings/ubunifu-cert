@@ -352,7 +352,7 @@ h5 {
   border: 1px solid black;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 758px) {
   body {
     font-size: 18px;
     background-color: black;
@@ -380,11 +380,5 @@ h5 {
     width: 50%;
     color: black;
     height: 150%;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    font-size: 20px;
   }
 }
