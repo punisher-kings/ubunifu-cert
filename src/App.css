@@ -352,9 +352,34 @@ h5 {
   border: 1px solid black;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   body {
     font-size: 18px;
+    background-color: black;
+    color: white;
+  }
+  input {
+    width: 150%;
+    height: 55px;
+  }
+
+  button {
+    width: 55%;
+    height: 50px;
+  }
+  a,
+  span {
+    color: white;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .products {
+    width: 40%;
+    color: black;
+    height: 70%;
   }
 }
 
