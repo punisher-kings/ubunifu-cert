@@ -87,6 +87,17 @@ export default function AdminManager() {
         <div>
           <button>create product</button>
         </div>
+        <button
+          style={{
+            width: "auto",
+            height: "25px",
+            backgroundColor: "black",
+          }}
+        >
+          <a href="/Home" style={{ color: "white", fontSize: "15px" }}>
+            view added product
+          </a>
+        </button>
       </form>
 
       <ManageProducts />

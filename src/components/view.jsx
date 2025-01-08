@@ -47,24 +47,46 @@ function ViewProduct() {
 
   return (
     <>
-      <h5>Shop now ?</h5>
-
-      <div className="wrapper">
-        <div>
-          <img src={product.upload} className="imgcart" />
+      <h5>Selected product</h5>
+      <div className="duct" style={{ position: "fixed" }}>
+        <div className="imgs" style={{ height: "80%" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src={product.upload}
+              className="imgcart"
+              style={{ width: "65%", height: "50%" }}
+            />
+          </div>
         </div>
-        <div>
-          <p>
-            {product.name} <br />
-            {product.memory} <br /> {product.price}
-          </p>
+        <div
+          className="price"
+          style={{
+            height: "80%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+        >
           <div>
-            <button
-              onClick={() => handleAddToShop(product.id)}
-              className="btn_cart"
-            >
-              Add to Cart
-            </button>
+            <p>
+              {product.name} <br />
+              {product.memory} <br /> {product.price}
+            </p>
+            <div>
+              <button
+                onClick={() => handleAddToShop(product.id)}
+                className="btn_cart"
+              >
+                Add to Cart
+              </button>
+            </div>
           </div>
         </div>
       </div>

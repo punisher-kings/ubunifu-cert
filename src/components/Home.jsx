@@ -1,16 +1,7 @@
 import { collection, query, where, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import c1 from "./images/c1.jpeg";
-import pic12 from "./images/p12.jpg";
-import pic11 from "./images/p11.jpg";
-import i1 from "./images/i1.jpeg";
-import g3 from "./images/g3.jpeg";
-import g2 from "./images/g2.jpeg";
-import p6 from "./images/p6.jpg";
-import p2 from "./images/p2.jpg";
-import s2 from "./images/s2.jpeg";
-import s1 from "./images/s1.jpeg";
+import "font-awesome/css/font-awesome.min.css";
 import { db } from "./Firebase";
 function Home() {
   const navigate = useNavigate();
@@ -135,6 +126,7 @@ function Home() {
           <a className="admin" href="/Admin">
             <button class="button">
               <i className="admin" class="fa-brands fa-discord"></i>
+              {/* <p style={{ position: "fixed" }}>❌</p> */}
             </button>
           </a>
 
@@ -163,25 +155,27 @@ function Home() {
         {/* example */}
         <div className="homebg">
           <div className="disc">
-            <h6>DISCOVER OUR NEW BEAUTY SELECTION</h6>
+            <h6>DISCOVER OUR NEW SELECTION</h6>
           </div>
           <div className="selection">
             <div className="select">
               {products.map((product) => (
                 <div className="products">
-                  <img src={product.upload} />
-                  <p>{product.name}</p>
-                  <p>Ksh{product.price}</p>
-                  <p>{product.memory}</p>
+                  <div>
+                    <img src={product.upload} />
+                    <p>{product.name}</p>
+                    <p>Ksh{product.price}</p>
+                    <p>{product.memory}</p>
 
-                  <Link to={`/view/${product.id}`}>
-                    <button
-                      onClick={() => handleAddToShop(product.id)}
-                      className="addtocart"
-                    >
-                      viewproduct
-                    </button>
-                  </Link>
+                    <Link to={`/view/${product.id}`}>
+                      <button
+                        onClick={() => handleAddToShop(product.id)}
+                        className="addtocart"
+                      >
+                        viewproduct
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>
