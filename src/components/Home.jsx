@@ -83,7 +83,7 @@ function Home() {
               placeholder="Search"
             />
             <a href="">
-              <button onClick={handleSearch} class="button">
+              <button onClick={handleSearch} id="search" class="button">
                 <svg
                   class="icon"
                   stroke="currentColor"
