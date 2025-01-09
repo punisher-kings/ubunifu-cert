@@ -35,7 +35,7 @@ function Shop() {
       <div className="cart">
         <div className="navbar">
           <div className="button-container"></div>
-          <a href="/Home">
+          <a href="/">
             <button className="button">
               <svg
                 className="icon"

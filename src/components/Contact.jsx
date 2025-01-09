@@ -62,7 +62,7 @@ function Contact() {
         <div className="nav">
           <div class="button-container"></div>
 
-          <a href="/Home">
+          <a href="/">
             <button class="button">
               <svg
                 class="icon"

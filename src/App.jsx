@@ -1,6 +1,6 @@
 import Sign from "./components/Sign";
 import Login from "./components/Login";
-import Home from "./components/Home";
+import Home from "./components/";
 import Check from "./components/Check";
 import Contact from "./components/Contact";
 import Shop from "./components/Shop";

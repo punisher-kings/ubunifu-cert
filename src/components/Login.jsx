@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      window.location.href = "/Home";
+      window.location.href = "/";
     } catch (error) {
       console.error(error.message);
       alert(error.message);
