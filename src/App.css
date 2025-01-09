@@ -529,6 +529,7 @@ button:hover {
 .view-link:hover {
   text-decoration: underline;
 }
+/* nav */
 
 /* Responsive Design  admin */
 @media (max-width: 768px) {
@@ -700,3 +701,5 @@ button:hover {
     font-size: 14px;
   }
 }
+
+/* nav */
