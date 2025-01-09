@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Check() {
   const [formData, setFormData] = useState({
@@ -22,6 +22,32 @@ function Check() {
     console.log("Order details:", formData);
     setOrderPlaced(true);
   };
+
+  const [shop, setShop] = useState(
+    JSON.parse(localStorage.getItem("shop")) || []
+  );
+
+  // Calculate total cost and display items ordered
+  const calculateTotal = () => {
+    return shop.reduce((total, item) => total + parseFloat(item.price), 0);
+  };
+
+  const getItemsOrdered = () => {
+    return shop.map((item) => item.name).join(", ");
+  };
+
+  useEffect(() => {
+    if (shop.length > 0) {
+      setFormData((prevData) => ({
+        ...prevData,
+        amount: calculateTotal().toFixed(2), // Format to 2 decimal places
+        items: getItemsOrdered(),
+      }));
+    }
+  }, [shop]);
+
+  console.log(shop);
+
   return (
     <>
       <div className="check">
@@ -41,7 +67,42 @@ function Check() {
             </div>
           </div>
           <div className="tradepod">
-            <div className="podcast"></div>
+            <div className="podcast">
+              {/* get all products from localstorage with shop key */}
+              <div className="imgs">
+                {shop.length > 0 ? (
+                  shop.map((item, index) => (
+                    <div
+                      className="item"
+                      style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        justifyContent: "center",
+                        textAlign: "center",
+                        alignItems: "center",
+                        flexDirection: "row",
+                        height: "65%",
+                        width: "35%",
+                        margin: "5px",
+                      }}
+                      key={item.id}
+                    >
+                      <img
+                        src={item.upload}
+                        className="imgcart"
+                        alt={item.name}
+                      />
+                      <p>
+                        {item.name} <br />
+                        {item.memory} <br /> {item.price}
+                      </p>
+                    </div>
+                  ))
+                ) : (
+                  <h5>Your cart is empty.</h5>
+                )}
+              </div>
+            </div>
             <div className="trade">
               <div
                 style={{ maxWidth: "600px", margin: "auto", padding: "20px" }}
@@ -62,7 +123,7 @@ function Check() {
                     />
 
                     <input
-                      placeholder=" Email Address:"
+                      placeholder="Email Address:"
                       type="email"
                       name="email"
                       value={formData.email}
@@ -75,7 +136,7 @@ function Check() {
                     />
 
                     <input
-                      placeholder="   Phone Number:"
+                      placeholder="Phone Number:"
                       type="tel"
                       name="phone"
                       value={formData.phone}
@@ -110,6 +171,7 @@ function Check() {
                       }}
                       placeholder="items ordered"
                     ></textarea>
+
                     <textarea
                       placeholder="Amount"
                       name="amount"
@@ -121,6 +183,7 @@ function Check() {
                         height: "10%",
                       }}
                     ></textarea>
+
                     <button
                       type="submit"
                       style={{

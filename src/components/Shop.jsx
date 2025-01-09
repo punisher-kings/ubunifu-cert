@@ -19,7 +19,7 @@ function Shop() {
   };
 
   const handleCheckout = () => {
-    localStorage.removeItem("shop");
+    // localStorage.removeItem("shop");
     window.location.href = "/check";
   };
 
