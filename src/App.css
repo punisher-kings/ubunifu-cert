@@ -558,6 +558,9 @@ button {
     display: none;
   }
 
+  .button {
+    font-size: 25px;
+  }
   #hh {
     margin-right: 35px;
     font-family: cursive;
