@@ -485,14 +485,15 @@ button {
     align-items: center;
     flex-direction: column;
     color: white;
-    border: 1px solid white;
   }
 
   .social-media-icons {
+    border: 1px solid white;
     width: 25%;
     height: 65%;
   }
   .company-details {
+    border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
