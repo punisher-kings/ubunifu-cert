@@ -67,7 +67,7 @@ function Check() {
             </div>
           </div>
           <div className="tradepod">
-            <div className="podcast">
+            <div id="pod">
               {/* get all products from localstorage with shop key */}
               <div className="imgs">
                 {shop.length > 0 ? (
