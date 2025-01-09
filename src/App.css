@@ -538,6 +538,8 @@ body {
 
 #hh {
   margin-right: 35px;
+  font-family: cursive;
+  font-size: 10px;
 }
 
 .nav {
@@ -559,7 +561,7 @@ body {
   border: none;
   color: white;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   display: flex;
   flex-direction: row;
 }
