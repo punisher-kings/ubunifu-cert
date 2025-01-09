@@ -700,7 +700,6 @@ body {
 
 .p .button {
   opacity: 1;
-  pointer-events: none; /* Prevent clicking on hidden buttons */
   transition: opacity 0.3s ease-in-out; /* Smooth transition */
 }
 
@@ -711,6 +710,7 @@ body {
   color: rgb(255, 250, 250);
   height: auto;
   display: flex;
+  overflow-y: scroll;
   justify-content: center;
   align-items: center;
   flex-direction: column;
