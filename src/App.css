@@ -488,13 +488,15 @@ button {
   }
 
   .social-media-icons {
-    border: 1px solid white;
+    border: 1px solid rgb(35, 34, 34);
     width: 85%;
     height: 40%;
   }
-  .company-details {
-    border: 1px solid white;
+  .company-details,
+  h3 {
+    border: 1px solid rgb(60, 59, 59);
     display: flex;
+    font-family: cursive;
     justify-content: center;
     align-items: center;
     font-size: 10px;
