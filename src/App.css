@@ -385,74 +385,74 @@ button {
   border: 1px solid black;
 }
 
-/* ContactUs.css */
-.contact-us-container {
-  width: 100%;
-  position: fixed;
-  gap: 10px;
-  display: flex;
-  overflow-x: hidden;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  height: 100%;
-  padding: 20px;
-}
-
-.social-media-icons h2 {
-  font-family: cursive;
-  font-size: 18px;
-}
-
-.social-media-icons {
-  width: 29.3%;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  border: 1px solid black;
-}
-.contact-form {
-  width: 35.3%;
-  height: 60%;
-  display: flex;
-  border: 1px solid black;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.company-details {
-  width: 29.3%;
-  border: 1px solid black;
-  height: 60%;
-  margin-right: 5%;
-  display: flex;
-  font-size: 15px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.icon-link {
-  font-size: 2rem;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.icon-link:hover {
-  color: #007bff;
-}
-
-.social-icon {
-  font-size: 2.5rem;
-}
-
-/* Media query for screens 480px and below */
 @media (max-width: 480px) {
+  /* ContactUs.css */
+  .contact-us-container {
+    width: 100%;
+    position: fixed;
+    gap: 10px;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .social-media-icons h2 {
+    font-family: cursive;
+    font-size: 18px;
+  }
+
+  .social-media-icons {
+    width: 29.3%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid black;
+  }
+  .contact-form {
+    width: 35.3%;
+    height: 60%;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .company-details {
+    width: 29.3%;
+    border: 1px solid black;
+    height: 60%;
+    margin-right: 5%;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .icon-link {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .icon-link:hover {
+    color: #007bff;
+  }
+
+  .social-icon {
+    font-size: 2.5rem;
+  }
+
+  /* Media query for screens 480px and below */
   /* .home {
     position: fixed;
     background-color: black;
@@ -511,12 +511,6 @@ button {
 
   /* home quarie */
   /* Global Styles */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
 
   .home {
     width: 100%;
