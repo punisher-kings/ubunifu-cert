@@ -488,6 +488,11 @@ button {
   .nav:hover {
     background-color: #444;
   }
+
+  .nav.button svg {
+    font-size: 25px;
+  }
+
   .contact-us-container {
     background-color: black;
     display: flex;
@@ -556,10 +561,6 @@ button {
 
   #search {
     display: none;
-  }
-
-  .button {
-    font-size: 25px;
   }
   #hh {
     margin-right: 35px;
