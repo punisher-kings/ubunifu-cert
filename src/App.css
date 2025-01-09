@@ -533,6 +533,13 @@ button {
     width: 85%;
   }
 
+  .container {
+    position: fixed;
+    background-color: black;
+    color: white;
+    font-family: monospace, cursive;
+  }
+
   .from button {
     width: 65%;
   }
