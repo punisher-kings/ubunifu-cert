@@ -18,9 +18,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/Sign" element={<Sign />} />
-          <Route path="/" element={<Contact />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/Shop" element={<Shop />} />
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Check" element={<Check />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/view/:id" element={<ViewProduct />} />

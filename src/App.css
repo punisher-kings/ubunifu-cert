@@ -609,7 +609,7 @@ body {
 /* Media Queries */
 
 /* Small Devices (Mobile Portrait) */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -637,10 +637,10 @@ body {
     font-size: 1.2rem;
     text-align: center;
   }
-}
+} */
 
 /* Medium Devices (Tablet Portrait) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -669,10 +669,10 @@ body {
     font-size: 1.3rem;
     text-align: center;
   }
-}
+} */
 
 /* Large Devices (Tablet Landscape & Desktop) */
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
   .nav {
     justify-content: space-between;
   }
@@ -694,25 +694,8 @@ body {
   .homebg .disc h6 {
     font-size: 1.6rem;
   }
-}
+} */
 
 /* Extra Large Devices (Large Desktop / Large Screens) */
-@media (min-width: 1200px) {
-  .homebg .select {
-    justify-content: space-between;
-  }
-
-  .homebg .products {
-    width: 22%;
-  }
-
-  .nav .button {
-    font-size: 1.8rem;
-  }
-
-  .homebg .disc h6 {
-    font-size: 2rem;
-  }
-}
 
 /* home quarie */
