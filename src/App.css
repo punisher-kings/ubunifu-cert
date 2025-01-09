@@ -478,4 +478,9 @@ button {
   .nav:hover {
     background-color: #444;
   }
+  .company-details {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
 }
