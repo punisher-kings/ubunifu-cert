@@ -58,7 +58,6 @@ function Home() {
         {/* navbar */}
         <div className="nav">
           <div class="button-container">
-            ❌
             <a href="/Home">
               <button class="button">
                 <svg

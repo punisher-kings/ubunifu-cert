@@ -528,6 +528,10 @@ body {
   min-height: 100vh;
 }
 
+.search {
+  display: none;
+}
+
 .nav {
   width: 100%;
   display: flex;
