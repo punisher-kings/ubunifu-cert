@@ -710,6 +710,10 @@ body {
   background-color: blue;
   color: black;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Show buttons and icons when hovering over the <p> tag on small screens */
