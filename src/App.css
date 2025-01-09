@@ -478,9 +478,20 @@ button {
   .nav:hover {
     background-color: #444;
   }
-  .company-details {
+  .contact-us-container {
     background-color: black;
+    display: flex;
+    flex-direction: row;
     color: white;
     border: 1px solid white;
+  }
+
+  .social-media-icons {
+    width: 25%;
+    height: 65%;
+  }
+  .company-details {
+    width: 25%;
+    height: 65%;
   }
 }
