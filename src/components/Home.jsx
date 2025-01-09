@@ -144,6 +144,18 @@ function Home() {
                 </svg>
               </button>
             </a>
+
+            <a href="/login">
+              <button>
+                <p
+                  style={{
+                    fontSize: "25px",
+                  }}
+                >
+                  ❌
+                </p>
+              </button>
+            </a>
           </div>
         </div>
         {/* navbar */}
