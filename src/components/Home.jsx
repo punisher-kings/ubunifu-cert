@@ -151,7 +151,7 @@ function Home() {
         {/* example */}
         <div className="homebg">
           <div className="disc">
-            <h6>DISCOVER OUR NEW SELECTION</h6>
+            <h6 id="hh">DISCOVER OUR NEW SELECTION</h6>
           </div>
           <div className="selection">
             <div className="select">
