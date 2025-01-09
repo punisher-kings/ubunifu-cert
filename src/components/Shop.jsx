@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Shop() {
+  const navigate = useNavigate();
   const [shop, setShop] = useState(
     JSON.parse(localStorage.getItem("shop")) || []
   );
@@ -20,7 +22,8 @@ function Shop() {
 
   const handleCheckout = () => {
     // localStorage.removeItem("shop");
-    window.location.href = "/check";
+    // window.location.href = "/check";
+    navigate("/Check");
   };
 
   useEffect(() => {
