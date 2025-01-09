@@ -529,6 +529,13 @@ button {
     flex-direction: column;
     min-height: 100vh;
   }
+  .from input {
+    width: 85%;
+  }
+
+  .from button {
+    width: 65%;
+  }
 
   .search {
     display: none;
