@@ -94,7 +94,7 @@ export default function AdminManager() {
             backgroundColor: "black",
           }}
         >
-          <a href="/Home" style={{ color: "white", fontSize: "15px" }}>
+          <a href="/" style={{ color: "white", fontSize: "15px" }}>
             view added product
           </a>
         </button>

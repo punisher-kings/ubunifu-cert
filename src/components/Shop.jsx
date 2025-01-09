@@ -23,7 +23,7 @@ function Shop() {
   const handleCheckout = () => {
     // localStorage.removeItem("shop");
     // window.location.href = "/check";
-    navigate("/Check");
+    navigate("/check");
   };
 
   useEffect(() => {
