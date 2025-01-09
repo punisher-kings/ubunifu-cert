@@ -490,15 +490,16 @@ button {
   .social-media-icons {
     border: 1px solid white;
     width: 25%;
-    height: 65%;
+    height: 40%;
   }
   .company-details {
     border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
     text-align: center;
     width: 25%;
-    height: 65%;
+    height: 50%;
   }
 }
