@@ -5,6 +5,7 @@ import { FaTwitter, FaWhatsapp, FaInstagram, FaTelegram } from "react-icons/fa";
 import { db } from "./Firebase";
 function Contact() {
   // contact
+  const phoneNumber = "+254708400310"; // Replace with the actual phone number
 
   // contact
   const navigate = useNavigate();
