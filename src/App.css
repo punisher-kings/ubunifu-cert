@@ -698,16 +698,23 @@ body {
   }
 } */
 
-p .button {
+.p .button {
   opacity: 0;
   pointer-events: none; /* Prevent clicking on hidden buttons */
   transition: opacity 0.3s ease-in-out; /* Smooth transition */
 }
 
+.p {
+  margin-right: 55%;
+  width: auto;
+  background-color: blue;
+  height: auto;
+}
+
 /* Show buttons and icons when hovering over the <p> tag on small screens */
 @media (max-width: 480px) {
-  p:hover .button {
-    opacity: 1;
+  .p:hover .button {
+    opacity: 0;
     pointer-events: auto;
   }
 }
