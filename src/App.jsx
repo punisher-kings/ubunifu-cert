@@ -1,6 +1,6 @@
 import Sign from "./components/Sign";
 import Login from "./components/Login";
-import Home from "./components/";
+import Home from "./components/Home";
 import Check from "./components/Check";
 import Contact from "./components/Contact";
 import Shop from "./components/Shop";
@@ -17,10 +17,10 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/Sign" element={<Sign />} />
+          <Route path="" element={<Sign />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Shop" element={<Shop />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/check" element={<Check />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/view/:id" element={<ViewProduct />} />
