@@ -168,7 +168,7 @@ function Contact() {
             </a>
             <a
               href="https://wa.me/yourphonenumber"
-              target="_blank"
+              target="+245708400310"
               rel="noopener noreferrer"
               className="icon-link"
             >
