@@ -530,7 +530,7 @@ button {
     min-height: 100vh;
   }
   .container .from input {
-    width: 150px;
+    width: 150%;
     height: 50px;
   }
 
@@ -541,8 +541,12 @@ button {
     font-family: monospace, cursive;
   }
 
+  .submit p {
+    color: white;
+  }
+
   .container.from button {
-    width: 100px;
+    width: 65%;
     height: 50px;
   }
 
