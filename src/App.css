@@ -521,16 +521,15 @@ body {
 
 .home {
   display: flex;
+  position: fixed;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .nav {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
   padding: 10px;
 }
 
