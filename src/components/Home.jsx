@@ -147,7 +147,6 @@ function Home() {
                 </button>
               </a>
             </p>
-            x{" "}
           </div>
         </div>
         {/* navbar */}
