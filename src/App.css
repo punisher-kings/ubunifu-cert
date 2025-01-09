@@ -508,3 +508,211 @@ button {
     font-family: cursive;
   }
 }
+
+/* home quarie */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav .button-container {
+  display: flex;
+}
+
+.nav .button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.nav .search {
+  padding: 8px;
+  width: 200px;
+}
+
+.homebg {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.homebg .disc h6 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.homebg .selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.homebg .select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.homebg .products {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+}
+
+.homebg .products img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.homebg .products p {
+  margin: 10px 0;
+}
+
+.addtocart {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.addtocart:hover {
+  background-color: #45a049;
+}
+
+/* Media Queries */
+
+/* Small Devices (Mobile Portrait) */
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav .search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .homebg .selection {
+    flex-direction: column;
+  }
+
+  .homebg .select {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .homebg .products {
+    width: 100%;
+  }
+
+  .homebg .disc h6 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* Medium Devices (Tablet Portrait) */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav .button {
+    margin-bottom: 10px;
+  }
+
+  .homebg .selection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .homebg .select {
+    justify-content: space-around;
+    gap: 15px;
+  }
+
+  .homebg .products {
+    width: 45%;
+  }
+
+  .homebg .disc h6 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+/* Large Devices (Tablet Landscape & Desktop) */
+@media (min-width: 769px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .homebg .selection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .homebg .select {
+    justify-content: space-between;
+  }
+
+  .homebg .products {
+    width: 22%;
+  }
+
+  .homebg .disc h6 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Extra Large Devices (Large Desktop / Large Screens) */
+@media (min-width: 1200px) {
+  .homebg .select {
+    justify-content: space-between;
+  }
+
+  .homebg .products {
+    width: 22%;
+  }
+
+  .nav .button {
+    font-size: 1.8rem;
+  }
+
+  .homebg .disc h6 {
+    font-size: 2rem;
+  }
+}
+
+/* home quarie */
