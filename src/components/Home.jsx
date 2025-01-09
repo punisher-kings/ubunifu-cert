@@ -145,16 +145,13 @@ function Home() {
               </button>
             </a>
 
-            <a href="/login">
-              <button>
-                <p
-                  style={{
-                    fontSize: "25px",
-                  }}
-                >
-                  ❌
-                </p>
-              </button>
+            <a
+              href="/login"
+              style={{
+                fontSize: "25px",
+              }}
+            >
+              ❌
             </a>
           </div>
         </div>
