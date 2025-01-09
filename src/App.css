@@ -589,14 +589,6 @@ body {
   border-radius: 8px;
 }
 
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 35%;
-  height: 55%;
-}
-
 .homebg .products p {
   margin: 10px 0;
 }
