@@ -530,7 +530,8 @@ button {
     min-height: 100vh;
   }
   .container .from input {
-    width: 85%;
+    width: 150px;
+    height: 50px;
   }
 
   .container {
@@ -541,7 +542,8 @@ button {
   }
 
   .container.from button {
-    width: 65%;
+    width: 100px;
+    height: 50px;
   }
 
   .search {
