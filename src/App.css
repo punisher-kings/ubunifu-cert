@@ -520,6 +520,7 @@ body {
 }
 
 .home {
+  width: 100%;
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -527,7 +528,7 @@ body {
 }
 
 .nav {
-  width: 75%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
