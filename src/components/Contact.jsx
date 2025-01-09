@@ -168,8 +168,8 @@ function Contact() {
               <FaTwitter className="social-icon" />
             </a>
             <a
-              href="https://wa.me/yourphonenumber"
-              target="+245708400310"
+              href="https://wa.me/+245708400310"
+              target="_blank"
               rel="noopener noreferrer"
               className="icon-link"
             >
