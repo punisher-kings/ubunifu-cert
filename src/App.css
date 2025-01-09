@@ -579,12 +579,12 @@ body {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
-  width: 200px;
+  width: 350px;
   text-align: center;
 }
 
 .homebg .products img {
-  width: 150%;
+  width: 120%;
   height: auto;
   border-radius: 8px;
 }
