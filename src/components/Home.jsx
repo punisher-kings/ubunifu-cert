@@ -59,6 +59,7 @@ function Home() {
         <div className="nav">
           <div class="button-container">
             <p className="p">
+              ❌
               <a href="/Home">
                 <button class="button">
                   <svg
@@ -75,7 +76,6 @@ function Home() {
                   </svg>
                 </button>
               </a>
-
               <input
                 className="search"
                 type="text"
@@ -105,7 +105,6 @@ function Home() {
                   </svg>
                 </button>
               </a>
-
               <a href="/Contact">
                 <button class="button">
                   <svg
@@ -122,13 +121,11 @@ function Home() {
                   </svg>
                 </button>
               </a>
-
               <a className="admin" href="/Admin">
                 <button class="button">
                   <i className="admin" class="fa-brands fa-discord"></i>
                 </button>
               </a>
-
               <a href="/Shop">
                 <button class="button">
                   <svg
