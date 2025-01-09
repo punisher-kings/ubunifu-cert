@@ -481,7 +481,9 @@ button {
   .contact-us-container {
     background-color: black;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: white;
     border: 1px solid white;
   }
@@ -491,6 +493,10 @@ button {
     height: 65%;
   }
   .company-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 25%;
     height: 65%;
   }
