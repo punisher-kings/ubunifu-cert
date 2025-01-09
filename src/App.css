@@ -453,6 +453,12 @@ button {
 
 /* Media query for screens 480px and below */
 @media (max-width: 480px) {
+  .home {
+    position: fixed;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
   .nav {
     display: none; /* Initially hide the navbar items */
     flex-direction: column;
