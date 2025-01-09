@@ -1,8 +1,12 @@
 import { collection, query, where, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { FaTwitter, FaWhatsapp, FaInstagram, FaTelegram } from "react-icons/fa";
 import { db } from "./Firebase";
-function Home() {
+function Contact() {
+  // contact
+
+  // contact
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [products, setProducts] = useState([]);
@@ -42,7 +46,6 @@ function Home() {
   };
 
   console.log(searchQuery);
-
   const handleSearch = () => {
     console.log("searching for:", searchQuery);
   };
@@ -83,7 +86,7 @@ function Home() {
             onkeyPress={handleKeyPress}
             placeholder="Search"
           />
-          <a href="">
+          <a href="/Contact">
             <button onClick={handleSearch} class="button">
               <svg
                 class="icon"
@@ -105,7 +108,7 @@ function Home() {
             </button>
           </a>
 
-          <a href="/Contact">
+          <a href="">
             <button class="button">
               <svg
                 class="icon"
@@ -150,37 +153,66 @@ function Home() {
           </a>
         </div>
 
-        {/* example */}
-        <div className="homebg">
-          <div className="disc">
-            <h6>DISCOVER OUR NEW SELECTION</h6>
+        {/* contact */}
+        <div className="contact-us-container">
+          {/* Social Media Icons */}
+          <div className="social-media-icons">
+            <h2>Contact Us</h2>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-link"
+            >
+              <FaTwitter className="social-icon" />
+            </a>
+            <a
+              href="https://wa.me/yourphonenumber"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-link"
+            >
+              <FaWhatsapp className="social-icon" />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-link"
+            >
+              <FaInstagram className="social-icon" />
+            </a>
+            <a
+              href="https://t.me/yourtelegram"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-link"
+            >
+              <FaTelegram className="social-icon" />
+            </a>
           </div>
-          <div className="selection">
-            <div className="select">
-              {products.map((product) => (
-                <div className="products">
-                  <div>
-                    <img src={product.upload} />
-                    <p>{product.name}</p>
-                    <p>Ksh{product.price}</p>
-                    <p>{product.memory}</p>
 
-                    <Link to={`/view/${product.id}`}>
-                      <button
-                        onClick={() => handleAddToShop(product.id)}
-                        className="addtocart"
-                      >
-                        viewproduct
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
+          {/* Contact Form */}
+
+          {/* Company Details */}
+          <div className="company-details">
+            <h3>Our Company</h3>
+            <p>We are located at: Paramount in Ngara</p>
+            <address>
+              00100 Nairobi
+              <br />
+              Nairobi city 00100
+              <br />
+              Phone: (+254) 708400310
+              <br />
+              Email: kariuki044@gmail.com
+            </address>
+            <p>Find us easily on the map and feel free to visit us!</p>
           </div>
         </div>
+        {/* contact */}
       </div>
     </>
   );
 }
-export default Home;
+export default Contact;

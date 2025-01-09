@@ -49,29 +49,7 @@ function Shop() {
             </button>
           </a>
 
-          <a href="">
-            <button className="button">
-              <svg
-                className="icon"
-                stroke="currentColor"
-                fill="none"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                ></path>
-              </svg>
-            </button>
-          </a>
-
-          <a href="">
+          <a href="/Contact">
             <button className="button">
               <svg
                 className="icon"
@@ -110,13 +88,27 @@ function Shop() {
           </a>
         </div>
         <div>
-          <h5>Shop now</h5>
+          <h5>Cart</h5>
         </div>
         <div className="duct">
           <div className="imgs">
             {shop.length > 0 ? (
               shop.map((item, index) => (
-                <div className="item" key={item.id}>
+                <div
+                  className="item"
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "center",
+                    textAlign: "center",
+                    alignItems: "center",
+                    flexDirection: "row",
+                    height: "65%",
+                    width: "35%",
+                    margin: "5px",
+                  }}
+                  key={item.id}
+                >
                   <img src={item.upload} className="imgcart" alt={item.name} />
                   <p>
                     {item.name} <br />
@@ -126,8 +118,12 @@ function Shop() {
                   <button
                     className="remove-button"
                     onClick={() => removeFromShop(item.id)}
+                    style={{
+                      backgroundColor: "ButtonShadow",
+                      color: "black",
+                    }}
                   >
-                    Remove
+                    Remove item
                   </button>
                 </div>
               ))
@@ -135,24 +131,58 @@ function Shop() {
               <h5>Your cart is empty.</h5>
             )}
           </div>
-          <div className="price">
-            <h1 className="price-cart">Cart</h1>
+          <div
+            className="price"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              textAlign: "center",
+              alignItems: "center",
+              fontFamily: "monospace",
+              fontSize: "18px",
+              flexDirection: "column",
+              overflowY: "scroll",
+            }}
+          >
             <ul>
               {shop.map((item, index) => (
-                <li key={item.id}>
+                <li
+                  key={item.id}
+                  style={{
+                    listStyle: "none",
+                    display: "flex",
+                    justifyContent: "center",
+                    textAlign: "center",
+                    alignItems: "center",
+                    fontSize: "10px",
+                    flexDirection: "column",
+                  }}
+                >
                   <img src={item.upload} className="cart__img" />
                   <span>
                     {item.name}: {item.price}
                   </span>
                 </li>
               ))}
-              <li>
+              <li
+                style={{
+                  listStyle: "none",
+                }}
+              >
                 <span>Total: Ksh {totalCost.toFixed(2)}</span>
               </li>
             </ul>
-            <button className="checkout-button" onClick={handleCheckout}>
-              Checkout
-            </button>
+            <div>
+              <button
+                style={{
+                  marginTop: "25%",
+                }}
+                className="checkout-button"
+                onClick={handleCheckout}
+              >
+                Checkout
+              </button>
+            </div>
           </div>
         </div>
       </div>

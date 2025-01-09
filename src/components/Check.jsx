@@ -6,6 +6,7 @@ function Check() {
     email: "",
     address: "",
     phone: "",
+    amount: "",
     items: "",
   });
 
@@ -26,9 +27,8 @@ function Check() {
       <div className="check">
         <div className="pay">
           <button className="cucu">
-            <p></p>
             <a className="sohp" href="./Shop">
-              Back
+              Back to shop
             </a>
           </button>
           <p className="order">your order</p>
@@ -37,7 +37,7 @@ function Check() {
               <p>products</p>
             </div>
             <div className="pro">
-              <p>subtotal</p>
+              <p>pay here</p>
             </div>
           </div>
           <div className="tradepod">
@@ -48,95 +48,87 @@ function Check() {
               >
                 {!orderPlaced ? (
                   <form className="fort" onSubmit={handleSubmit}>
-                    <div style={{}}>
-                      <label>
-                        Full Name:
-                        <input
-                          type="text"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
-                          required
-                          style={{
-                            width: "100%",
-                            height: "35px",
-                          }}
-                        />
-                      </label>
-                    </div>
-                    <div style={{}}>
-                      <label>
-                        Email Address:
-                        <input
-                          type="email"
-                          name="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          required
-                          style={{
-                            width: "100%",
-                            height: "35px",
-                          }}
-                        />
-                      </label>
-                    </div>
+                    <input
+                      placeholder="Full name:"
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      style={{
+                        width: "100%",
+                        height: "35px",
+                      }}
+                    />
 
-                    <div style={{}}>
-                      <label>
-                        Phone Number:
-                        <input
-                          type="tel"
-                          name="phone"
-                          value={formData.phone}
-                          onChange={handleChange}
-                          required
-                          style={{
-                            width: "100%",
-                            height: "35px",
-                          }}
-                        />
-                      </label>
-                    </div>
-                    <div style={{}}>
-                      <label>
-                        Delivery Address:
-                        <textarea
-                          name="address"
-                          value={formData.address}
-                          onChange={handleChange}
-                          required
-                          style={{
-                            width: "100%",
-                            height: "10%",
-                          }}
-                        ></textarea>
-                      </label>
-                    </div>
-                    <div style={{}}>
-                      <label>
-                        Order Items:
-                        <textarea
-                          name="items"
-                          value={formData.items}
-                          onChange={handleChange}
-                          required
-                          style={{
-                            width: "100%",
-                            height: "10%",
-                          }}
-                          placeholder="E.g., 2x Pizza, 1x Burger"
-                        ></textarea>
-                      </label>
-                    </div>
+                    <input
+                      placeholder=" Email Address:"
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      style={{
+                        width: "100%",
+                        height: "35px",
+                      }}
+                    />
+
+                    <input
+                      placeholder="   Phone Number:"
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
+                      style={{
+                        width: "100%",
+                        height: "35px",
+                      }}
+                    />
+
+                    <textarea
+                      placeholder="Delivery Address:"
+                      name="address"
+                      value={formData.address}
+                      onChange={handleChange}
+                      required
+                      style={{
+                        width: "100%",
+                        height: "10%",
+                      }}
+                    ></textarea>
+
+                    <textarea
+                      name="items"
+                      value={formData.items}
+                      onChange={handleChange}
+                      required
+                      style={{
+                        width: "100%",
+                        height: "10%",
+                      }}
+                      placeholder="items ordered"
+                    ></textarea>
+                    <textarea
+                      placeholder="Amount"
+                      name="amount"
+                      value={formData.amount}
+                      onChange={handleChange}
+                      required
+                      style={{
+                        width: "100%",
+                        height: "10%",
+                      }}
+                    ></textarea>
                     <button
                       type="submit"
                       style={{
                         backgroundColor: "#007BFF",
                         color: "#fff",
-                        width: "35%",
-                        height: "10%",
+                        width: "100%",
+                        height: "35px",
                         border: "none",
-                        padding: "10px 20px",
                         cursor: "pointer",
                         borderRadius: "5px",
                       }}
