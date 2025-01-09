@@ -529,7 +529,7 @@ button {
     flex-direction: column;
     min-height: 100vh;
   }
-  .from input {
+  .container .from input {
     width: 85%;
   }
 
@@ -540,7 +540,7 @@ button {
     font-family: monospace, cursive;
   }
 
-  .from button {
+  .container.from button {
     width: 65%;
   }
 
