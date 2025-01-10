@@ -56,10 +56,11 @@ function Home() {
     <>
       <div className="home">
         {/* navbar */}
-        <div className="nav">
+        <div className="">
           <h4>
             <span>WixBlog</span>
           </h4>
+
           <div class="button-container">
             {/* <a href="/Home">
               <button class="button">

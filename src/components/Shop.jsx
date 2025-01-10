@@ -115,7 +115,7 @@ function Shop() {
                   key={item.id}
                 >
                   <img src={item.upload} className="imgcart" alt={item.name} />
-                  <p>
+                  <p className="text">
                     {item.name} <br />
                     {item.memory} <br /> {item.price}
                   </p>

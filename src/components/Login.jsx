@@ -40,7 +40,7 @@ function Login() {
           <button type="submit">Login</button>
           <p>
             <span>if you dont have an account</span>
-            <Link to="/"> Signup</Link>
+            <Link to="/sign"> Signup</Link>
           </p>
         </form>
       </div>

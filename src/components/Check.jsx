@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { auth } from "./Firebase";
+import { useNavigate } from "react-router-dom";
+import { onAuthStateChanged } from "firebase/auth";
 
 function Check() {
   const [formData, setFormData] = useState({
@@ -11,7 +14,25 @@ function Check() {
   });
 
   const [orderPlaced, setOrderPlaced] = useState(false);
+  const [shop, setShop] = useState(
+    JSON.parse(localStorage.getItem("shop")) || []
+  );
+  const [user, setUser] = useState(null);
 
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!user) {
+      // navigate("/login");
+    }
+  }, [user, navigate]);
+  console.log("user", user);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -22,10 +43,6 @@ function Check() {
     console.log("Order details:", formData);
     setOrderPlaced(true);
   };
-
-  const [shop, setShop] = useState(
-    JSON.parse(localStorage.getItem("shop")) || []
-  );
 
   // Calculate total cost and display items ordered
   const calculateTotal = () => {
@@ -40,13 +57,11 @@ function Check() {
     if (shop.length > 0) {
       setFormData((prevData) => ({
         ...prevData,
-        amount: calculateTotal().toFixed(2), // Format to 2 decimal places
+        amount: calculateTotal().toFixed(2),
         items: getItemsOrdered(),
       }));
     }
   }, [shop]);
-
-  console.log(shop);
 
   return (
     <>
@@ -57,18 +72,18 @@ function Check() {
               Back to shop
             </a>
           </button>
-          <p className="order">your order</p>
+          <p className="order">Your order</p>
           <div className="move">
             <div className="pro">
-              <p>products</p>
+              <p>Products</p>
             </div>
             <div className="pro">
-              <p>pay here</p>
+              <p>Pay here</p>
             </div>
           </div>
           <div className="tradepod">
             <div id="pod">
-              {/* get all products from localstorage with shop key */}
+              {/* Display products from localStorage */}
               <div className="checkout__products">
                 {shop.length > 0 ? (
                   shop.map((item, index) => (
@@ -155,7 +170,7 @@ function Check() {
                         width: "100%",
                         height: "10%",
                       }}
-                      placeholder="items ordered"
+                      placeholder="Items ordered"
                     ></textarea>
 
                     <textarea

@@ -596,6 +596,7 @@ button {
   }
 
   .nav .button-container {
+    margin-right: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -681,6 +682,9 @@ button {
   margin-left: 14px;
   height: 80vh;
   overflow-y: scroll;
+}
+.text {
+  color: black;
 }
 @media only screen and (max-width: 600px) {
   .checkout__products {
