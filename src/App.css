@@ -14,7 +14,33 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* From Uiverse.io by Yashwanthnaini */
+h4 {
+  border: none;
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  transition: all 1.5s ease;
+  font-family: "Ropa Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  padding: 0;
+}
 
+h4 span {
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 17px;
+  background: #ffffff10;
+  backdrop-filter: blur(20px);
+  transition: 0.4s ease-in-out;
+  transition-property: color;
+  height: 10px;
+  width: 15%;
+}
+
+h4 span:hover {
+  backdrop-filter: blur(0px);
+  color: #ffffff;
+}
 .forminputs {
   width: 50%;
   height: 65%;
@@ -41,8 +67,7 @@ input {
 }
 
 button {
-  width: 10.5vw;
-  height: 5.5vh;
+  padding: 6px 8px;
   background-color: orangered;
   color: black;
   font-size: 15px;
@@ -241,7 +266,7 @@ h5 {
 }
 
 .item {
-  width: 25%;
+  /* width: 25%;
   height: 50%;
   display: flex;
   margin: 15px;
@@ -251,7 +276,7 @@ h5 {
   align-items: center;
   justify-content: center;
   border: 2px solid black;
-  margin-top: 10px;
+  margin-top: 10px; */
 }
 
 .admin {
@@ -268,12 +293,6 @@ h5 {
   text-align: center;
 }
 .imgs {
-  width: 45%;
-  margin-left: 10px;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   overflow-y: scroll;
   border: 1px solid black;
   height: 80%;
@@ -648,5 +667,22 @@ button {
 
   .addtocart:hover {
     background-color: #45a049;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .checkout__products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+    height: 80vh;
+    overflow-y: scroll;
+  }
+  .imgs {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    padding: 5px;
   }
 }

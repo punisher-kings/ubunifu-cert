@@ -52,7 +52,7 @@ function Check() {
     <>
       <div className="check">
         <div className="pay">
-          <button className="cucu">
+          <button className="btn__back">
             <a className="sohp" href="./Shop">
               Back to shop
             </a>
@@ -69,24 +69,10 @@ function Check() {
           <div className="tradepod">
             <div id="pod">
               {/* get all products from localstorage with shop key */}
-              <div className="imgs">
+              <div className="checkout__products">
                 {shop.length > 0 ? (
                   shop.map((item, index) => (
-                    <div
-                      className="item"
-                      style={{
-                        display: "flex",
-                        flexWrap: "wrap",
-                        justifyContent: "center",
-                        textAlign: "center",
-                        alignItems: "center",
-                        flexDirection: "row",
-                        height: "65%",
-                        width: "35%",
-                        margin: "5px",
-                      }}
-                      key={item.id}
-                    >
+                    <div key={item.id}>
                       <img
                         src={item.upload}
                         className="imgcart"

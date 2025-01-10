@@ -98,18 +98,20 @@ function Shop() {
             {shop.length > 0 ? (
               shop.map((item, index) => (
                 <div
-                  className="item"
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    justifyContent: "center",
-                    textAlign: "center",
-                    alignItems: "center",
-                    flexDirection: "row",
-                    height: "65%",
-                    width: "35%",
-                    margin: "5px",
-                  }}
+                  className=""
+                  style={
+                    {
+                      // display: "flex",
+                      // flexWrap: "wrap",
+                      // justifyContent: "center",
+                      // textAlign: "center",
+                      // alignItems: "center",
+                      // flexDirection: "row",
+                      // height: "65%",
+                      // width: "35%",
+                      // margin: "5px",
+                    }
+                  }
                   key={item.id}
                 >
                   <img src={item.upload} className="imgcart" alt={item.name} />
@@ -145,6 +147,7 @@ function Shop() {
               fontSize: "18px",
               flexDirection: "column",
               overflowY: "scroll",
+              overflowX: "hidden",
             }}
           >
             <ul>
@@ -179,11 +182,12 @@ function Shop() {
               <button
                 style={{
                   marginTop: "25%",
+                  marginBottom: "10px",
                 }}
                 className="checkout-button"
                 onClick={handleCheckout}
               >
-                Checkout
+                proceed Checkout
               </button>
             </div>
           </div>
