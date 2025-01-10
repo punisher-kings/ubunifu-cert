@@ -48,15 +48,9 @@ function ViewProduct() {
   return (
     <>
       <h5>Selected product</h5>
-      <div className="duct" style={{ position: "fixed" }}>
-        <div className="imgs" style={{ height: "80%" }}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+      <div className="product__display">
+        <div className="">
+          <div className="img__box">
             <img
               src={product.upload}
               className="imgcart"
@@ -64,16 +58,7 @@ function ViewProduct() {
             />
           </div>
         </div>
-        <div
-          className="price"
-          style={{
-            height: "80%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-          }}
-        >
+        <div className="">
           <div>
             <p>
               {product.name} <br />

@@ -669,7 +669,19 @@ button {
     background-color: #45a049;
   }
 }
-
+.product__display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout__products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+  height: 80vh;
+  overflow-y: scroll;
+}
 @media only screen and (max-width: 600px) {
   .checkout__products {
     width: 100%;
@@ -684,5 +696,14 @@ button {
     width: 40%;
     flex-direction: column;
     padding: 5px;
+  }
+  .product__display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img__box {
+    display: flex;
+    justify-content: center;
   }
 }
