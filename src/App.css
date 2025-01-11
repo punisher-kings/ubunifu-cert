@@ -26,15 +26,13 @@ h4 {
 }
 
 h4 span {
-  display: inline-block;
-  padding: 15px 35px;
   font-size: 17px;
   background: #ffffff10;
   backdrop-filter: blur(20px);
   transition: 0.4s ease-in-out;
   transition-property: color;
   height: 10px;
-  width: 15%;
+  width: 25%;
 }
 
 h4 span:hover {
@@ -121,10 +119,9 @@ h3 {
 }
 
 .button-container {
-  border: 1px solid black;
   display: flex;
   width: 55%;
-  margin-left: 45%;
+  margin-left: 35%;
   height: 40px;
   align-items: center;
 }

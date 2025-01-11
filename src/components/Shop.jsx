@@ -94,24 +94,36 @@ function Shop() {
           <h5>Cart</h5>
         </div>
         <div className="duct">
-          <div className="imgs">
+          <div
+            className="imgs"
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              textAlign: "center",
+              alignItems: "center",
+              flexDirection: "row",
+              height: "80%",
+              width: "50%",
+              margin: "5px",
+            }}
+          >
             {shop.length > 0 ? (
               shop.map((item, index) => (
                 <div
                   className=""
-                  style={
-                    {
-                      // display: "flex",
-                      // flexWrap: "wrap",
-                      // justifyContent: "center",
-                      // textAlign: "center",
-                      // alignItems: "center",
-                      // flexDirection: "row",
-                      // height: "65%",
-                      // width: "35%",
-                      // margin: "5px",
-                    }
-                  }
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "center",
+                    textAlign: "center",
+                    alignItems: "center",
+                    flexDirection: "row",
+                    height: "65%",
+                    width: "35%",
+                    border: "1px solid black",
+                    margin: "5px",
+                  }}
                   key={item.id}
                 >
                   <img src={item.upload} className="imgcart" alt={item.name} />
