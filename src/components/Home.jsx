@@ -152,12 +152,27 @@ function Home() {
             <a
               href="/login"
               style={{
+                display: "flex",
+                flexDirection: "row",
                 fontSize: "25px",
+                textAlign: "center",
+                justifyContent: "center",
+                alignItems: "center",
                 marginLeft: "5%",
               }}
             >
               ❌
             </a>
+            <p
+              style={{
+                fontFamily: "cursive",
+                fontWeight: "900",
+                fontSize: "15px",
+              }}
+            >
+              {" "}
+              click to login
+            </p>
           </div>
         </div>
         {/* navbar */}

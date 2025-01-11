@@ -121,12 +121,12 @@ h3 {
 }
 
 .button-container {
+  border: 1px solid black;
   display: flex;
-  width: 100%;
+  width: 55%;
   margin-left: 45%;
   height: 40px;
   align-items: center;
-  border-radius: 10px;
 }
 
 .button {
