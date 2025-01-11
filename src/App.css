@@ -496,6 +496,20 @@ button {
     margin: 10px 0;
   }
 
+  .imgs {
+    width: 100%;
+  }
+  .rap {
+    width: 100%;
+  }
+  .duct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
   /* Hover effect: Show the navbar items when hovering over the navbar */
   .nav:hover {
     display: flex;

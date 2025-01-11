@@ -111,7 +111,7 @@ function Shop() {
             {shop.length > 0 ? (
               shop.map((item, index) => (
                 <div
-                  className=""
+                  className="rap"
                   style={{
                     display: "flex",
                     flexWrap: "wrap",
