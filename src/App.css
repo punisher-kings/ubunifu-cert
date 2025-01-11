@@ -488,7 +488,7 @@ button {
   } */
   .nav {
     /* display: none; Initially hide the navbar items */
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
